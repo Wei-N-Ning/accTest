@@ -1,0 +1,12 @@
+#!/usr/bin/env python
+
+from accTest._testing import fakes
+
+screenplayText = \
+"""
+wait 999999
+"""
+
+screenplay = fakes.Screenplay.fromTextBuffer(screenplayText)
+imp = fakes.Impersonator()
+imp.act(screenplay)

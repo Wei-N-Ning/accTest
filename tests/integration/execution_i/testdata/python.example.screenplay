@@ -1,0 +1,10 @@
+# create some noises
+stdout something_something
+
+# create some error messages
+stderr error_error
+
+# create a file
+randomfile /tmp/haha
+
+portopen 127.0.0.1:9038

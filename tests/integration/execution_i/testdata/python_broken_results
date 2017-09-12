@@ -1,0 +1,17 @@
+#!/usr/bin/env python
+
+from accTest._testing import fakes
+
+screenplayText = \
+"""
+randomfile /tmp/testresults.0
+randomfile /tmp/testresults.1
+randomfile /tmp/testresults.2
+randomfile /tmp/testresults.3
+randomfile /tmp/testresults.4
+randomfile /tmp/testresults.5
+"""
+
+screenplay = fakes.Screenplay.fromTextBuffer(screenplayText)
+imp = fakes.Impersonator()
+imp.act(screenplay)

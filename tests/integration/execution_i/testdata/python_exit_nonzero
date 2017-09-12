@@ -1,0 +1,13 @@
+#!/usr/bin/env python
+
+from accTest._testing import fakes
+
+screenplayText = \
+"""
+stderr something_wrong_happened
+exit 1
+"""
+
+screenplay = fakes.Screenplay.fromTextBuffer(screenplayText)
+imp = fakes.Impersonator()
+imp.act(screenplay)
